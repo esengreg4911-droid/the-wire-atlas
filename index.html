@@ -1,20 +1,22 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
+ <base href="/the-wire/atlas/">
  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
  <meta name="description" content="沿着人物与关系，走进巴尔的摩。按观看进度探索《火线》五季人物地图。">
  <meta name="theme-color" content="#eceae3"><title>火线 · 人物地图 / The Wire Atlas</title>
  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
- <script src="data.js" defer></script><script src="app.js" defer></script>
+ <script src="data.js" defer></script><script src="i18n-en.js" defer></script><script src="app.js" defer></script>
 </head>
 <body>
  <header class="topbar">
-  <a class="brand" href="./index.html" aria-label="火线人物地图首页"><span class="wordmark">THE WIRE<span class="wiremark"></span></span><span class="brand-sub">人物地图<span>THE BALTIMORE CONNECTIONS</span></span></a>
+  <div class="brand"><span class="wordmark">THE WIRE<span class="wiremark"></span></span><span class="brand-sub">人物地图<span>THE BALTIMORE CONNECTIONS</span></span></div>
   <nav class="main-nav" aria-label="视图"><button class="nav-button active" data-view="map"><span>◎</span> 关系地图</button><button class="nav-button" data-view="directory"><span>▦</span> 人物名录</button></nav>
   <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="搜索姓名、别名、演员…" autocomplete="off" aria-label="搜索人物"><kbd>/</kbd></label>
  </header>
  <div class="app-shell">
   <aside class="sidebar">
+   <div class="atlas-toolbar"><a class="atlas-back-link" href="https://www.gringotts04.cc/the-wire">← 返回《火线》</a><button id="languageToggle" class="atlas-language" type="button" aria-label="Switch to English">EN</button></div>
    <div class="section-label">01 <span>观看进度</span></div>
    <div class="season-tabs" aria-label="季数"><button data-season="1" class="selected" aria-current="true">S1</button><button data-season="2" aria-current="false">S2</button><button data-season="3" aria-current="false">S3</button><button data-season="4" aria-current="false">S4</button><button data-season="5" aria-current="false">S5</button></div>
    <label class="select-label" for="episodeSelect">已看完第一季</label>
